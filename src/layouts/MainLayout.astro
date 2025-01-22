@@ -7,6 +7,8 @@ import { Github } from "lucide-react";
 import { Mail } from "lucide-react";
 import logo from "../images/techtonyc.png";
 import "@/styles/globals.css";
+
+const { title = "TechTonyc - Tech Blog - By Tony B. NYA" } = Astro.props;
 ---
 
 <html lang="en">
@@ -15,7 +17,7 @@ import "@/styles/globals.css";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/x-icon" href="/techtonyc.ico" />
-    <title>Tech Blog, by Tony B. Nya</title>
+    <title>{title}</title>
   </head>
   <body>
     <nav class="bg-black text-white">
