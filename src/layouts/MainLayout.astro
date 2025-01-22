@@ -9,6 +9,10 @@ import { BLOG_TITLE, BLOG_DESCRIPTION } from "../constants";
 const {
   title = "Articles, Inspiring Stories, and Hands-On Tutorials - By Tony B. NYA",
 } = Astro.props;
+
+interface Props {
+  title?: string;
+}
 ---
 
 <html lang="en">
