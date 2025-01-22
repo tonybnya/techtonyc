@@ -2,7 +2,8 @@
 import { Image } from "astro:assets";
 
 import { Button } from "@/components/ui/button";
-import logo from "../images/techtonyc.png";
+import logo from "../images/tech.png";
+// import logo from "../images/techtonyc.png";
 ---
 
 <nav class="bg-black text-white">
@@ -11,12 +12,6 @@ import logo from "../images/techtonyc.png";
   >
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <Image src={logo} class="h-14 w-14" alt="TechTonyc Logo" />
-      <span
-        class="self-center text-3xl max-lg:text-xl whitespace-nowrap tracking-tighter"
-        ><span class="text-white">Tech</span><span class="text-[#602f32]"
-          >Tony</span
-        ><span class="text-[#8f7d5e]">k</span>
-      </span>
       <Button
         data-collapse-toggle="navbar-default"
         type="button"
