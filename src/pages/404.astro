@@ -26,14 +26,14 @@ const title = "Error Code 404 - Page Not Found";
   >
     <div class="flex flex-col items-center gap-3 mb-12">
       <Image src={logo} alt="logo" class="h-10 w-10" />
-      <span class="text-4xl max-lg:text-lg font-bold text-white tracking-tight">
+      <span class="text-4xl max-lg:text-lg text-[#602f32] tracking-tight">
         TechTonyk
       </span>
     </div>
 
     <div class="text-center space-y-4 mb-12">
       <h1
-        class="text-4xl max-lg:text-lg font-semibold leading-none tracking-tight"
+        class="text-4xl max-lg:text-lg max-sm:text-base leading-none tracking-tight"
       >
         Oops! You have
         <br />
@@ -41,7 +41,9 @@ const title = "Error Code 404 - Page Not Found";
         <br />
         found!
       </h1>
-      <p class="text-lg max-lg:text-sm font-light leading-6 tracking-tight">
+      <p
+        class="text-lg max-lg:text-sm max-sm:text-xs font-light leading-6 tracking-normal"
+      >
         Home is just a click away. Let's go back and
         <br />
         continue our regular life.
@@ -59,7 +61,7 @@ const title = "Error Code 404 - Page Not Found";
       </Button>
     </div>
 
-    <div class="mt-12 text-[#8f7d5e] text-sm font-bold">
+    <div class="mt-12 text-[#8f7d5e] text-sm">
       <span>Error Code 404</span>
     </div>
   </div>
