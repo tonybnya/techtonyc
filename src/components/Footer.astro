@@ -2,6 +2,8 @@
 import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
 import { Mail } from "lucide-react";
 ---
 
@@ -80,6 +82,15 @@ import { Mail } from "lucide-react";
           </li>
           <li class="mb-2">
             <a
+              href="https://www.linkedin.com/in/tonybnya/"
+              target="_blank"
+              class="text-white hover:text-[#602f32]"
+            >
+              <Linkedin />
+            </a>
+          </li>
+          <li class="mb-2">
+            <a
               href="https://x.com/tonybnya"
               target="_blank"
               class="text-white hover:text-[#602f32]"
@@ -117,8 +128,21 @@ import { Mail } from "lucide-react";
             </a>
           </li>
         </ul>
-        <div class="flex gap-2">
-          <Mail /><span class="tracking-wide">tonybnya@gmail.com</span>
+        <div class="flex flex-col gap-2">
+          <div class="flex gap-2">
+            <Mail className="hover:text-[#602f32]" /><a
+              class="tracking-wide hover:underline hover:underline-offset-4 hover:decoration-[#602f32] hover:decoration-2"
+              href="mailto:tonybnya@gmail.com">Send email</a
+            >
+          </div>
+          <div class="flex gap-2">
+            <BriefcaseBusiness className="hover:text-[#602f32]" /><a
+              href="https://tonybnya-portfolio.onrender.com/"
+              target="_blank"
+              class="tracking-wide hover:underline hover:underline-offset-4 hover:decoration-[#602f32] hover:decoration-2"
+              >Portfolio</a
+            >
+          </div>
         </div>
       </div>
     </div>
