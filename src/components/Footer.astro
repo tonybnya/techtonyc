@@ -1,10 +1,14 @@
 ---
+import { Image } from "astro:assets";
+
 import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Github } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { BriefcaseBusiness } from "lucide-react";
 import { Mail } from "lucide-react";
+
+import logo from "../images/tech.png";
 ---
 
 <footer class="bg-black text-white">
@@ -14,17 +18,18 @@ import { Mail } from "lucide-react";
     >
       <div class="mt-10">
         <h3 class="text-2xl mb-6 text-[#8f7d5e]">About</h3>
-        <p
-          class="text-white text-sm text-justify tracking-tight max-lg:tracking-wide"
-        >
-          <span class="self-center font-bold whitespace-nowrap tracking-tight">
-            <span class="text-white">Tech</span><span class="text-[#602f32]"
-              >Tony</span
-            ><span class="text-[#8f7d5e]">k</span></span
-          >
-          is a blog for tech enthusiasts. I publish articles, accomplishments, milestones,
-          stories, thoughts, and tutorials about tech related stuff.
-        </p>
+        <div class="flex justify-center items-center gap-4 max-lg:flex-col">
+          <Image
+            src={logo}
+            class="h-32 w-32 max-lg:h-14 max-lg:w-14 animate-pulse"
+            alt="TechTonyc Logo"
+          />
+          <p class="text-white text-sm text-justify tracking-wide">
+            TechTonyk is a blog for tech enthusiasts. I publish articles,
+            stories, thoughts, tutorials, and milestones related to tech
+            related.
+          </p>
+        </div>
       </div>
       <div class="mt-10 mx-auto">
         <h3 class="text-2xl mb-6 text-justify text-[#8f7d5e]">Categories</h3>
