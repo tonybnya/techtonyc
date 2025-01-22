@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
 import bg from "../images/bg.png";
-import logo from "../images/techtonyc.png";
+import logo from "../images/tech.png";
 import "@/styles/globals.css";
 
 import { BLOG_TITLE } from "../constants";
@@ -25,10 +25,7 @@ const title = "Error Code 404 - Page Not Found";
     class="w-1/2 flex flex-col justify-between max-lg:justify-center items-center p-8 bg-black min-h-screen"
   >
     <div class="flex flex-col items-center gap-3 mb-12">
-      <Image src={logo} alt="logo" class="h-10 w-10" />
-      <span class="text-4xl max-lg:text-lg text-[#602f32] tracking-tight">
-        TechTonyk
-      </span>
+      <Image src={logo} alt="logo" class="h-20 w-20 animate-pulse" />
     </div>
 
     <div class="text-center space-y-4 mb-12">
