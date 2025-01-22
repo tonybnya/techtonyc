@@ -1,23 +1,31 @@
 ---
 import { Image } from "astro:assets";
+
 import { Button } from "@/components/ui/button";
+
 import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Github } from "lucide-react";
 import { Mail } from "lucide-react";
+
 import logo from "../images/techtonyc.png";
+
 import "@/styles/globals.css";
 
-const { title = "TechTonyc - Tech Blog - By Tony B. NYA" } = Astro.props;
+import { BLOG_TITLE, BLOG_DESCRIPTION } from "../constants";
+
+const {
+  title = "Articles, Inspiring Stories, and Hands-On Tutorials - By Tony B. NYA",
+} = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={BLOG_DESCRIPTION} />
     <link rel="icon" type="image/x-icon" href="/techtonyc.ico" />
-    <title>{title}</title>
+    <title>{BLOG_TITLE} - {title}</title>
   </head>
   <body>
     <nav class="bg-black text-white">
