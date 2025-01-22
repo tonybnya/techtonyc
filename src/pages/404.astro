@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import { Button } from "@/components/ui/button";
+import bg from "../images/bg.png";
+import logo from "../images/techtonyc.png";
+import "@/styles/globals.css";
+---
+
+<div class="min-h-screen flex text-white">
+  <div
+    class="w-1/2 h-screen bg-cover bg-center"
+    style={`background-image: url('${bg.src}')`}
+  >
+  </div>
+
+  <div
+    class="w-1/2 flex flex-col justify-between max-lg:justify-center items-center p-8 bg-black min-h-screen"
+  >
+    <div class="flex flex-col items-center gap-3 mb-12">
+      <Image src={logo} alt="logo" class="h-10 w-10" />
+      <span class="text-4xl max-lg:text-lg font-bold text-white tracking-tight">
+        TechTonyc
+      </span>
+    </div>
+
+    <div class="text-center space-y-4 mb-12">
+      <h1
+        class="text-4xl max-lg:text-lg font-semibold leading-none tracking-tight"
+      >
+        Oops! You have
+        <br />
+        discovered a world not
+        <br />
+        found!
+      </h1>
+      <p class="text-lg max-lg:text-sm font-light leading-6 tracking-tight">
+        Home is just a click away. Let's go back and
+        <br />
+        continue our regular life.
+      </p>
+
+      <Button size="lg" className="px-8 bg-[#602f32] hover:bg-[#602f32]/90">
+        <a
+          href="/"
+          class="uppercase font-bold"
+          rel="noopener noreferrer"
+          aria-label="Go to home page"
+        >
+          Go to Home
+        </a>
+      </Button>
+    </div>
+
+    <div class="mt-12 text-[#8f7d5e] text-sm font-bold">
+      <span>Error Code 404</span>
+    </div>
+  </div>
+</div>
